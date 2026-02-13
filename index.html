@@ -1,24 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fatemeh (Rose) Kooshki | Software Developer</title>
+    <title>Fatemeh (Rose) Kooshki | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="disclaimer">
-    This website was created for a course assignment and is temporarily public.
-</div>
-
 <header>
-    <h1>Fatemeh (Rose) Kooshki</h1>
-    <p>Software Development Student | Tester Co-op</p>
+    <div class="header-container">
+        <img src="profile.jpg" alt="Fatemeh (Rose) Kooshki" class="profile-pic">
+        <div class="intro-text">
+            <h1>Hi, I'm <span class="highlight">Fatemeh (Rose) Kooshki</span></h1>
+            <p class="intro-box">Welcome to my portfolio! I am a Software Development student passionate about coding and software testing.</p>
+            <p class="intro-box">I have experience in Java, C#, SQL, PHP, HTML, and Software Testing. I enjoy solving complex problems and creating user-friendly applications.</p>
+        </div>
+    </div>
 </header>
 
 <nav>
-    <a href="#summary">Summary</a>
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
@@ -26,68 +27,53 @@
     <a href="#contact">Contact</a>
 </nav>
 
-<section id="summary">
-    <h2>Summarizing Statement</h2>
-    <p>
-        Highly motivated and detail-oriented Software Development student with hands-on 
-        experience in Java programming, software testing, and database management. 
-        Skilled in quality assurance, debugging, and system optimization. 
-        Knowledgeable in SDLC methodologies including Agile and Waterfall, 
-        and passionate about improving software reliability and performance.
-    </p>
-</section>
-
 <section id="education">
     <h2>Education</h2>
-    <ul>
-        <li><strong>Diploma in Software Development</strong> – Mohawk College (2024–2026)</li>
-        <li><strong>Bachelor of Biology</strong> – University, Iran (2010–2014)</li>
-    </ul>
+    <div class="cards">
+        <div class="card">
+            <h3>Mohawk College, Hamilton</h3>
+            <p>Diploma in Software Development | Jan 2024 – Dec 2026</p>
+        </div>
+        <div class="card">
+            <h3>University, Iran</h3>
+            <p>Bachelor of Biology | Jan 2010 – Jan 2014</p>
+        </div>
+    </div>
 </section>
 
 <section id="skills">
-    <h2>Technical Skills</h2>
-
-    <div class="skill-box">
-        <h3>Programming</h3>
-        <p>Java, JavaScript, C#, SQL, PHP, HTML</p>
-    </div>
-
-    <div class="skill-box">
-        <h3>Databases</h3>
-        <p>SQL Server, MySQL, Database Design, Normalization</p>
-    </div>
-
-    <div class="skill-box">
-        <h3>Testing & QA</h3>
-        <p>JUnit, Katalon Recorder, Quality Testing Methodologies</p>
-    </div>
-
-    <div class="skill-box">
-        <h3>Tools</h3>
-        <p>Visual Studio, Git, SharePoint, Microsoft 365, Azure</p>
+    <h2>Skills</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Java, JavaScript, C#, PHP, HTML</p>
+        </div>
+        <div class="card">
+            <h3>Databases</h3>
+            <p>SQL Server, MySQL, Database Design, Normalization</p>
+        </div>
+        <div class="card">
+            <h3>Testing & QA</h3>
+            <p>JUnit, Katalon Recorder, Software Quality Assurance</p>
+        </div>
+        <div class="card">
+            <h3>Tools & Cloud</h3>
+            <p>Visual Studio, Git, Microsoft 365, Azure</p>
+        </div>
     </div>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
-
-    <div class="project-card">
-        <h3>Automated Website Testing</h3>
-        <p>
-            Designed and executed automated test cases using Katalon to ensure 
-            full requirement coverage and improve validation efficiency.
-            Identified and documented defects to enhance website reliability.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h3>Unit Testing in Java (JUnit)</h3>
-        <p>
-            Developed JUnit test cases applying Test-Driven Development (TDD). 
-            Improved code quality, identified bugs, and enhanced maintainability 
-            of Java applications.
-        </p>
+    <div class="cards">
+        <div class="card">
+            <h3>Automated Website Testing</h3>
+            <p>Designed and executed automated test cases using Katalon, improving website reliability and validation processes.</p>
+        </div>
+        <div class="card">
+            <h3>Unit Testing in Java</h3>
+            <p>Developed JUnit test cases, applied TDD, improved code quality, and identified bugs in Java applications.</p>
+        </div>
     </div>
 </section>
 
@@ -97,11 +83,11 @@
 </section>
 
 <section id="contact">
-    <h2>Contact Information</h2>
+    <h2>Contact</h2>
     <p>Email: fatemeh.kooshki@mohawkcollege.ca</p>
-    <p>Location: Burlington, ON</p>
     <p>Phone: 647-446-2949</p>
-    <p>LinkedIn: Add your LinkedIn URL here</p>
+    <p>Location: Burlington, ON</p>
+    <p>LinkedIn: Add your LinkedIn URL</p>
 </section>
 
 <footer>
