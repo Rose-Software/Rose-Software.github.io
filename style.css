@@ -1,138 +1,156 @@
+/* Reset default browser spacing and ensure consistent sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base styling for the entire page */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
-    background: #0d1117; /* deep charcoal */
-    color: #e6e6e6; /* soft white */
+    background: #0d1117; /* dark charcoal background for contrast */
+    color: #e6e6e6; /* soft white text for readability */
 }
 
-/* Disclaimer */
+/* Notice banner at the top of the page */
 .disclaimer {
-    background: #113d2c; /* dark green */
+    background: #e8fff2; /* light mint to brighten the dark theme */
     text-align: center;
     padding: 8px;
     font-size: 14px;
-    color: #b8ffd9; /* mint green */
+    color: #064d2f; /* deep green text for contrast */
 }
 
-/* Navigation */
+/* Navigation bar styling */
 nav {
-    background: #000; /* pure black */
+    background: #000; /* pure black for a strong header */
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 15px 50px;
     align-items: center;
-    position: sticky;
+    position: sticky; /* keeps navbar visible while scrolling */
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /* ensures navbar stays above all content */
 }
 
+/* Navigation list layout */
 nav ul {
     list-style: none;
     display: flex;
 }
 
+/* Spacing between nav items */
 nav ul li {
     margin-left: 20px;
 }
 
+/* Navigation links */
 nav a {
     color: #e6e6e6;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s; /* smooth hover animation */
 }
 
+/* Hover effect for nav links */
 nav a:hover {
-    color: #4dd0e1; /* aqua blue */
+    color: #4dd0e1; /* aqua blue highlight */
 }
 
-/* Resume Button */
+/* Resume button styling */
 .resume-btn {
-    background: #0056b3; /* darker blue */
+    background: #0074d9; /* medium blue for visibility */
     padding: 6px 12px;
     border-radius: 5px;
     transition: 0.3s;
 }
 
+/* Hover effect for resume button */
 .resume-btn:hover {
-    background: #008f6b; /* darker green */
+    background: #00a878; /* green hover for contrast */
 }
 
-/* Hero Section */
+/* Hero section at the top of the page */
 .hero {
     padding: 60px 50px;
+    background: #f4faff; /* soft light blue to balance dark theme */
+    color: #0d1117; /* dark text for readability */
 }
 
+/* Layout for hero content */
 .hero-container {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
+/* Profile image styling */
 .profile-img {
     width: 220px;
     border-radius: 15px;
-    border: 4px solid #008f6b; /* dark green border */
+    border: 4px solid #00a878; /* green border for accent */
 }
 
+/* Highlighted name color */
 .hero h1 span {
-    color: #4db8ff; /* bright blue highlight */
+    color: #0074d9; /* bright blue highlight */
 }
 
-/* Highlight Box */
+/* Highlight box for intro text */
 .highlight {
-    background: #0f1f2e; /* dark navy */
+    background: #e6f7ff; /* very light blue background */
     padding: 10px;
     border-radius: 8px;
     margin: 15px 0;
-    border-left: 5px solid #00b894; /* green accent */
+    border-left: 5px solid #00a878; /* green accent bar */
+    color: #0d1117;
 }
 
-/* Sections */
+/* Generic section styling */
 .section {
     padding: 60px 50px;
-    opacity: 0;
-    transform: translateY(40px);
+    opacity: 0; /* hidden until scroll animation triggers */
+    transform: translateY(40px); /* slide-up animation */
     transition: all 0.6s ease;
+    background: #f8f9fa; /* light gray background */
+    color: #0d1117;
 }
 
+/* Section titles */
 .section h2 {
     margin-bottom: 20px;
     font-size: 28px;
-    color: #4db8ff; /* blue */
+    color: #0074d9; /* blue accent */
 }
 
-/* Dark Section */
+/* Dark-themed sections for contrast */
 .dark {
-    background: #0a0a0a;
+    background: #111;
     color: white;
 }
 
-/* Cards */
+/* Card styling for education, projects, etc. */
 .card, .project-card {
-    background: #1a1f24; /* dark slate */
+    background: #ffffff; /* light card to contrast dark body */
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    border-left: 5px solid #4db8ff; /* blue accent */
+    border-left: 5px solid #0074d9; /* blue accent bar */
+    color: #0d1117;
 }
 
-/* Skills Grid */
+/* Skills grid layout */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
 }
 
+/* Individual skill tiles */
 .skill-card {
-    background: #1c1c1c;
+    background: #1c1c1c; /* dark tile to match theme */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -140,15 +158,16 @@ nav a:hover {
     color: white;
 }
 
+/* Hover animation for skill tiles */
 .skill-card:hover {
     transform: scale(1.05);
-    background: #008f6b; /* darker green hover */
+    background: #00a878; /* green hover effect */
 }
 
-/* Footer */
+/* Footer styling */
 footer {
     text-align: center;
     padding: 20px;
-    background: #000;
+    background: #000; /* dark footer */
     color: white;
 }
