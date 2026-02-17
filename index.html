@@ -1,98 +1,121 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fatemeh Kooshki | Portfolio</title>
+    <title>Fatemeh Kooshki | Software Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <div class="header-container">
-        <img src="<img src="assets/Fatemeh-picture.jpeg" alt="Fatemeh Kooshki" class="profile-img">
-        <div class="intro-text">
-            <h1>Hi, I'm <span class="highlight">Fatemeh Kooshki</span></h1>
-            <p class="intro-box">Welcome to my portfolio! I am a Software Development student passionate about coding and software testing.</p>
-            <p class="intro-box">I have experience in Java, C#, SQL, PHP, HTML, and Software Testing. I enjoy solving complex problems and creating user-friendly applications.</p>
-        </div>
-    </div>
-</header>
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+    This portfolio website was created temporarily for an academic assignment using GitHub Pages.
+</div>
 
+<!-- NAVBAR -->
 <nav>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
-    <a href="#contact">Contact</a>
+    <h2 class="logo">Fatemeh Kooshki</h2>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/resume.pdf" target="_blank" class="resume-btn">Resume</a></li>
+    </ul>
 </nav>
 
-<section id="education">
+<!-- HERO SECTION -->
+<section id="about" class="hero">
+    <div class="hero-container">
+        <img src="assets/profile.jpg" alt="Fatemeh Kooshki" class="profile-img">
+
+        <div class="intro">
+            <h1>Hi, I'm <span>Fatemeh Kooshki</span></h1>
+            <p class="highlight">
+                Passionate Software Developer specializing in full-stack development.
+            </p>
+
+            <p>
+                I am currently studying Software Development at Mohawk College.
+                I enjoy building scalable web applications and solving real-world problems
+                using JavaScript, React, Node.js, Python, C#, and SQL.
+                I value clean code, strong architecture, and user-friendly design.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
     <h2>Education</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Mohawk College, Hamilton</h3>
-            <p>Diploma in Software Development | Jan 2024 – Dec 2026</p>
-        </div>
-        <div class="card">
-            <h3>University, Iran</h3>
-            <p>Bachelor of Biology | Jan 2010 – Jan 2014</p>
-        </div>
+    <div class="card">
+        <h3>Software Development Diploma</h3>
+        <p>Mohawk College – Hamilton, Ontario</p>
+        <p>2023 – Present</p>
     </div>
 </section>
 
-<section id="skills">
+<!-- SKILLS -->
+<section id="skills" class="section dark">
     <h2>Skills</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Programming</h3>
-            <p>Java, JavaScript, C#, PHP, HTML</p>
-        </div>
-        <div class="card">
-            <h3>Databases</h3>
-            <p>SQL Server, MySQL, Database Design, Normalization</p>
-        </div>
-        <div class="card">
-            <h3>Testing & QA</h3>
-            <p>JUnit, Katalon Recorder, Software Quality Assurance</p>
-        </div>
-        <div class="card">
-            <h3>Tools & Cloud</h3>
-            <p>Visual Studio, Git, Microsoft 365, Azure</p>
-        </div>
+    <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">C#</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">Git & GitHub</div>
     </div>
 </section>
 
-<section id="projects">
+<!-- PROJECTS -->
+<section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Automated Website Testing</h3>
-            <p>Designed and executed automated test cases using Katalon, improving website reliability and validation processes.</p>
-        </div>
-        <div class="card">
-            <h3>Unit Testing in Java</h3>
-            <p>Developed JUnit test cases, applied TDD, improved code quality, and identified bugs in Java applications.</p>
-        </div>
+
+    <div class="project-card">
+        <h3>Inventory Management System</h3>
+        <p>
+            Built a full-stack REST API using Node.js and Express with SQLite database.
+            Implemented CRUD functionality and integrated a React Native frontend.
+        </p>
     </div>
+
+    <div class="project-card">
+        <h3>Flower Shop Database System</h3>
+        <p>
+            Designed relational database schema in SQL Server, created stored procedures,
+            indexing strategies, and optimized queries.
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3>Task Manager Web App</h3>
+        <p>
+            Developed a dynamic task management application using JavaScript and
+            local storage with interactive UI design.
+        </p>
+    </div>
+
 </section>
 
-<section id="resume">
-    <h2>Resume</h2>
-    <a class="btn" href="resume.pdf" target="_blank">Download Resume (PDF)</a>
-</section>
-
-<section id="contact">
+<!-- CONTACT -->
+<section id="contact" class="section dark">
     <h2>Contact</h2>
-    <p>Email: fatemeh.kooshki@mohawkcollege.ca</p>
-    <p>Phone: 647-446-2949</p>
-    <p>Location: Burlington, ON</p>
-    <p>LinkedIn: Add your LinkedIn URL</p>
+    <p>Email: fatemeh.kooshki@email.com</p>
+    <p>GitHub: github.com/yourusername</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
 </section>
 
 <footer>
-    <p>© 2026 Fatemeh (Rose) Kooshki</p>
+    © 2026 Fatemeh Kooshki | Built with GitHub Pages
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
