@@ -1,4 +1,4 @@
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,21 +8,22 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
-    background: #f0f8ff; /* soft light blue */
+    background: #0d1117; /* deep charcoal */
+    color: #e6e6e6; /* soft white */
 }
 
-/* Top Disclaimer */
+/* Disclaimer */
 .disclaimer {
-    background: #d4f5d0; /* soft green */
+    background: #113d2c; /* dark green */
     text-align: center;
     padding: 8px;
     font-size: 14px;
-    color: #064420;
+    color: #b8ffd9; /* mint green */
 }
 
 /* Navigation */
 nav {
-    background: #0a0a0a; /* black */
+    background: #000; /* pure black */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -43,7 +44,7 @@ nav ul li {
 }
 
 nav a {
-    color: white;
+    color: #e6e6e6;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -54,14 +55,14 @@ nav a:hover {
 
 /* Resume Button */
 .resume-btn {
-    background: #007bff; /* bright blue */
+    background: #0056b3; /* darker blue */
     padding: 6px 12px;
     border-radius: 5px;
     transition: 0.3s;
 }
 
 .resume-btn:hover {
-    background: #00b894; /* green */
+    background: #008f6b; /* darker green */
 }
 
 /* Hero Section */
@@ -78,20 +79,20 @@ nav a:hover {
 .profile-img {
     width: 220px;
     border-radius: 15px;
-    border: 4px solid #00b894; /* green border */
+    border: 4px solid #008f6b; /* dark green border */
 }
 
 .hero h1 span {
-    color: #007bff; /* blue highlight */
+    color: #4db8ff; /* bright blue highlight */
 }
 
 /* Highlight Box */
 .highlight {
-    background: #e0f7fa; /* light aqua */
+    background: #0f1f2e; /* dark navy */
     padding: 10px;
     border-radius: 8px;
     margin: 15px 0;
-    border-left: 5px solid #00b894;
+    border-left: 5px solid #00b894; /* green accent */
 }
 
 /* Sections */
@@ -105,22 +106,22 @@ nav a:hover {
 .section h2 {
     margin-bottom: 20px;
     font-size: 28px;
-    color: #007bff;
+    color: #4db8ff; /* blue */
 }
 
 /* Dark Section */
 .dark {
-    background: #111;
+    background: #0a0a0a;
     color: white;
 }
 
 /* Cards */
 .card, .project-card {
-    background: #ffffff;
+    background: #1a1f24; /* dark slate */
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    border-left: 5px solid #007bff;
+    border-left: 5px solid #4db8ff; /* blue accent */
 }
 
 /* Skills Grid */
@@ -131,7 +132,7 @@ nav a:hover {
 }
 
 .skill-card {
-    background: #333;
+    background: #1c1c1c;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -141,13 +142,13 @@ nav a:hover {
 
 .skill-card:hover {
     transform: scale(1.05);
-    background: #00b894; /* green hover */
+    background: #008f6b; /* darker green hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #0a0a0a;
+    background: #000;
     color: white;
 }
