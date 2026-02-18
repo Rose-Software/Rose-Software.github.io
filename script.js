@@ -1,6 +1,5 @@
 // Select all sections that should animate when they enter the viewport
 const sections = document.querySelectorAll(".section");
-<script src="script.js"></script>
 
 
 // Listen for scroll events on the window
